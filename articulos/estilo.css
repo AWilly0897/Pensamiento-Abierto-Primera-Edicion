@@ -1,0 +1,144 @@
+/* Fuente y estructura general */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 40px auto;
+  max-width: 800px;
+  line-height: 1.7;
+  padding: 0 20px;
+}
+
+/* Encabezado */
+header[role="banner"] {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #005f73;
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+.articulo {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Navegación (si se usa) */
+nav[role="navigation"] {
+  margin-bottom: 20px;
+  font-size: 0.95em;
+}
+
+/* Contenido principal */
+main[role="main"] {
+  outline: none;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 1.4em;
+  color: #00796b;
+  margin-bottom: 10px;
+  border-left: 4px solid #00796b;
+  padding-left: 10px;
+}
+
+section p {
+  margin-bottom: 20px;
+}
+
+/* Cita destacada */
+blockquote[aria-label] {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e0f7fa;
+  border-left: 5px solid #00796b;
+  font-style: italic;
+}
+
+.firma {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  color: #00796b;
+}
+
+/* Bloque de navegación entre artículos */
+.navegacion-articulos {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eef2f5;   /* Fondo suave para diferenciarlo */
+  border-top: 2px solid #003366; /* Línea superior para separar visualmente */
+  text-align: center;
+}
+
+.navegacion-articulos ul {
+  list-style: none;   /* Quitar viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+.navegacion-articulos li {
+  display: inline-block; /* Enlaces en línea */
+  margin: 0 1rem;
+}
+
+.navegacion-articulos a {
+  color: #003366;          /* Color sobrio y consistente */
+  font-weight: bold;       /* Resaltar enlaces */
+  text-decoration: none;   /* Sin subrayado por defecto */
+}
+
+.navegacion-articulos a:hover,
+.navegacion-articulos a:focus {
+  text-decoration: underline;          /* Subrayado al pasar o enfocar */
+  outline: 2px dashed #005f73;         /* Contorno accesible para teclado */
+  outline-offset: 4px;
+}
+
+
+/* Pie de página */
+footer[role="contentinfo"] {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+/* Accesibilidad: foco visible para navegación por teclado */
+:focus {
+  outline: 2px dashed #005f73;
+  outline-offset: 4px;
+}
+
+/* Mejora de contraste para enlaces */
+a {
+  color: #005f73;
+  text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+  background-color: #dff0f2;
+}
+
+/* Compatibilidad con lectores de pantalla */
+[aria-label] {
+  position: relative;
+}
+
+/* Evitar que aria-hidden afecte visualmente */
+[aria-hidden="true"] {
+  visibility: hidden;
+}

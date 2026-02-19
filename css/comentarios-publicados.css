@@ -1,0 +1,24 @@
+.comentarios-publicados {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eef2f5;
+  border-left: 4px solid #003366;
+  border-radius: 6px;
+}
+
+.comentarios-publicados h2 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.comentarios-publicados ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comentarios-publicados li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}

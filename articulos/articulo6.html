@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sindicatos, Economía y Corrupción</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+<meta property="og:title" content="Sindicatos, Economía y Corrupción">
+  <meta property="og:description" content="Un proyecto editorial y testimonial que busca abrir el debate sobre memoria, política, economía y sociedad.">
+  <meta property="og:image" content="https://pensamiento-abierto-primera-edicion.vercel.app/img/cgt.jpg">
+  <meta property="og:url" content="https://pensamiento-abierto-primera-edicion.vercel.app/articulos/articulo5.html">
+  <meta property="og:type" content="article">
+</head>
+
+<body>
+  <header role="banner" aria-label="Encabezado principal del artículo">
+    <h1>Sindicatos, Economía y Corrupción</h1>
+    <p class="articulo" aria-label="Número de artículo">Artículo 6</p>
+  </header>
+
+  <main role="main" aria-label="Contenido principal del artículo">
+    <section aria-labelledby="sindicatos">
+      <h2 id="sindicatos">El rol desviado de los sindicatos</h2>
+      <p>Los sindicatos nacieron para defender al trabajador. Pero hoy, muchos se han convertido en estructuras de
+        poder
+        que negocian con los gobiernos, no con los obreros. Se sientan en mesas donde el pueblo no tiene voz, y
+        no
+        firman acuerdos que beneficien a la clase trabajadora.</p>
+    </section>
+
+    <section aria-labelledby="ministros">
+      <h2 id="ministros">Ministros que olvidan</h2>
+      <p>Los ministros que deberían proteger al ciudadano, olvidan. Olvidan que el salario no alcanza. Olvidan que
+        el
+        ahorro se diluye. Olvidan que el pueblo no es una estadística, sino una urgencia. Y mientras tanto, el
+        dinero
+        circula entre élites que pactan, reparten y se blindan.</p>
+    </section>
+
+    <section aria-labelledby="economia">
+      <h2 id="economia">La economía como espejismo</h2>
+      <p>La economía se ha convertido en un juego de espejos. Nos hablan de inflación, de déficit, de mercado.
+        Pero no
+        nos hablan de hambre, de angustia, de dignidad. Porque en este sistema, el dinero no es de beneficio
+        social: es
+        una moneda de cambio.</p>
+    </section>
+
+    <section aria-labelledby="despertar">
+      <h2 id="despertar">El pueblo frente al saqueo</h2>
+      <p>El pueblo es víctima de arreglos entre élites. Y si no se despierta, seguirá siendo espectador de su
+        propio
+        saqueo. Pero si se organiza, si se informa, si se levanta, entonces puede recuperar lo que le pertenece:
+        su voz,
+        su valor, su futuro.</p>
+    </section>
+
+    <section aria-labelledby="proposito">
+      <h2 id="proposito">Propósito del artículo</h2>
+      <p>Este artículo no busca atribuir el capital. Busca hacer ver el saqueo. Porque cuando el ahorro se
+        convierte en
+        ilusión, y el trabajo en castigo, ya no hay justicia: hay sometimiento.</p>
+    </section>
+
+    <blockquote aria-label="Cita destacada">
+      <p>“Con el dinero se compran servicios. Acá compran serviles.”</p>
+      <cite class="firma">— Ernesto I. Lora</cite>
+    </blockquote>
+  </main>
+
+  <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
+
+  <!-- Comentarios publicados -->
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="articulo5.html" aria-label="Ir al artículo anterior: artículo 5">
+          ⟵ Artículo anterior
+        </a>
+      </li>
+      <li>
+        <a href="articulo7.html" aria-label="Ir al artículo siguiente: artículo 7">
+          Artículo siguiente ⟶
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+<script src="../js/comentarios.js"></script>
+<script src="../script.js"></script>
+<script>
+  // Cargar el formulario y el footer como componentes
+  fetch("../componentes/formulario-comentario.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-formulario").innerHTML = html;
+    });
+
+  fetch("../componentes/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

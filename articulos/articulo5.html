@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Esclavitud Moderna</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="La Esclavitud Moderna">
+  <meta property="og:description" content="Proyecto editorial y testimonial que busca abrir el debate sobre memoria, política, economía y sociedad.">
+  <meta property="og:image" content="https://pensamiento-abierto-primera-edicion.vercel.app/img/ban3.jpg">
+  <meta property="og:url" content="https://pensamiento-abierto-primera-edicion.vercel.app/articulos/articulo5.html">
+  <meta property="og:type" content="article">
+</head>
+
+<body>
+  <header role="banner" aria-label="Encabezado principal del artículo">
+    <h1>La Esclavitud Moderna</h1>
+    <p class="articulo" aria-label="Número de artículo">Artículo 5</p>
+  </header>
+
+  <main role="main" aria-label="Contenido principal del artículo">
+
+    <article>
+    <section aria-labelledby="frase-inicial">
+      <h2 id="frase-inicial">Frase inicial</h2>
+      <p><em>“Vivimos una época de esclavitud moderna.”</em></p>
+    </section>
+
+    <section aria-labelledby="apariencia">
+      <h2 id="apariencia">Apariencia de libertad</h2>
+      <p>No hay cadenas visibles, pero hay horarios que nos atan. No hay látigos, pero hay deudas que nos
+        persiguen. No
+        hay amos declarados, pero hay sistemas que nos condicionan.
+        La esclavitud moderna no se impone por la fuerza: se disfraza de normalidad.</p>
+    </section>
+
+    <section aria-labelledby="condicionamiento">
+      <h2 id="condicionamiento">Condicionamientos invisibles</h2>
+      <p>Los impuestos nos exprimen, la precariedad nos agota y la manipulación mediática nos adormece. Nos dicen
+        que
+        somos libres, pero cada decisión está condicionada por algoritmos,
+        por intereses, por estructuras que no controlamos.</p>
+    </section>
+
+    <section aria-labelledby="democracia">
+      <h2 id="democracia">Democracia escenográfica</h2>
+      <p>La democracia se ha convertido en una escenografía. Votamos, sí. Pero ¿elegimos? Participamos, sí. Pero
+        ¿decidimos? La voluntad popular se menosprecia entre partidos
+        que repiten fórmulas, entre medios que fabrican consensos, entre leyes que protegen al poder más que al
+        pueblo.
+      </p>
+    </section>
+
+    <section aria-labelledby="obediencia">
+      <h2 id="obediencia">Obediencia sin conciencia</h2>
+      <p>Somos esclavos cuando aceptamos sin preguntar. Cuando trabajamos sin sentido. Cuando consumimos sin
+        necesidad.
+        Cuando obedecemos sin entender. Pero también somos libres
+        cuando decidimos pensar. Y ese pensamiento es el primer acto de liberación.</p>
+    </section>
+
+    <section aria-labelledby="propuesta">
+      <h2 id="propuesta">Propuesta de conciencia</h2>
+      <p>Este artículo no busca sembrar desesperanza. Busca abrir los ojos. Porque la esclavitud moderna no se
+        combate
+        con violencia, sino con conciencia. No se rompe con gritos,
+        sino con pensamiento. No se supera con obediencia, sino con dicidencia, a partir de los dos pilares más
+        importantes que debe tener el pueblo argentino: educación y salud.
+        Salud y educación. Los dos pilares que terminan siendo uno: la principal columna de un país rico, pero
+        lleno de
+        pobres.</p>
+    </section>
+
+    </article>
+    
+    <blockquote aria-label="Cita destacada">
+      <p>“Vivimos una época de esclavitud moderna.”</p>
+      <cite class="firma">— Ernesto I. Lora</cite>
+    </blockquote>
+  </main>
+
+  <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
+
+  <!-- Comentarios publicados -->
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="articulo4.html" aria-label="Ir al artículo anterior: artículo 4">
+          ⟵ Artículo anterior
+        </a>
+      </li>
+      <li>
+        <a href="articulo6.html" aria-label="Ir al artículo siguiente: artículo 6">
+          Artículo siguiente ⟶
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+<script src="../js/comentarios.js"></script>
+<script src="../script.js"></script>
+<script>
+  // Cargar el formulario y el footer como componentes
+  fetch("../componentes/formulario-comentario.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-formulario").innerHTML = html;
+    });
+
+  fetch("../componentes/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

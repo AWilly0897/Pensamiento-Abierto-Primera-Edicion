@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pensamiento Abierto · Ernesto Ireneo Lora</title>
+
+  <!-- Estilos y favicon -->
+  <link rel="stylesheet" href="/css/estilos.css" />
+  <link rel="icon" href="/Favicon.ico" type="image/x-icon" />
+
+  <!-- Metadatos estándar -->
+  <meta name="description" content="Pensamiento Abierto: un proyecto de Ernesto Ireneo Lora que abre el debate sobre memoria, cultura, política, economía y sociedad.">
+
+  <!-- Metadatos Open Graph -->
+  <meta property="og:title" content="Pensamiento Abierto · Ernesto Ireneo Lora">
+  <meta property="og:description" content="Un proyecto que busca abrir el debate sobre la memoria, la cultura, la política, la economía y la sociedad.">
+  <meta property="og:image" content="https://pensamiento-abierto-primera-edicion.vercel.app/img/calva2.jpg">
+  <meta property="og:url" content="https://pensamiento-abierto-primera-edicion.vercel.app/">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+  <header role="banner" aria-label="Encabezado principal del blog">
+    <h1>Pensamiento Abierto - Primera Edicion</h1>
+    <p class="subtitulo">Ejemplos que ya no son más precedentes</p>
+
+    <section role="region" aria-labelledby="bienvenida">
+      <h2 id="bienvenida">Bienvenida</h2>
+      <p>
+        Este blog hace referencia a las acciones que realizan los diversos poderes dentro de la Argentina y fuera también,
+        para que cada uno pueda verlos como verdaderos representantes del pueblo, o como actores que buscan sus propios beneficios.
+        La pregunta es si realmente podemos unirnos y, como decía un gran general, recordar que "el pueblo unido jamás será vencido".
+        Cuánta falta hace un jefe de gobierno que tenga en claro lo que realmente debe poner en primer lugar: Salud y Educación.
+      </p>
+    </section>
+
+    <section role="region" aria-labelledby="intencion">
+      <h2 id="intencion">Intención del espacio</h2>
+      <p>
+        “Pensamiento Abierto” prioriza decir, porque se toman decisiones donde queda claro que los reales beneficiarios quedan al margen.
+        Cada artículo es una pieza única, para intentar enmendar lo que se le hace al pueblo Argentino.
+      </p>
+      <p>
+        Lo más importante es su objetividad de lo que piensas tú, y dejarlo asentado es una forma de poder incluirlo como parte del trabajo,
+        para que cree consistencia y empatía con los demás.
+      </p>
+    </section>
+
+    <nav role="navigation" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#btn-proposito">Propósito</a></li>
+        <li><a href="#btn-publico">Público</a></li>
+        <li><a href="#btn-valores">Valores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section role="region" aria-labelledby="acordeon" class="acordeon">
+    <h2 id="acordeon">Fundamentos del blog</h2>
+  
+    <button class="acordeon-btn" aria-expanded="false" aria-controls="panel-proposito" id="btn-proposito">¿Qué quiero transmitir?</button>
+    <div id="panel-proposito" class="acordeon-panel" hidden>
+      <p>Este blog informa sobre los pasos de las culturas y relatos fundamentados por referencias, para que tengan distintas interpretaciones.</p>
+    </div>
+  
+    <button class="acordeon-btn" aria-expanded="false" aria-controls="panel-publico" id="btn-publico">¿A quién va dirigido?</button>
+    <div id="panel-publico" class="acordeon-panel" hidden>
+      <p>Está pensado para quienes aún se preguntan. Para los que no aceptan sin cuestionar. Para revisores, lectores,
+        editores, docentes, y sobre todo, para quienes creen que la escritura puede ser un acto de justicia.</p>
+    </div>
+  
+    <button class="acordeon-btn" aria-expanded="false" aria-controls="panel-valores" id="btn-valores">¿Qué valores sostienen este espacio?</button>
+    <div id="panel-valores" class="acordeon-panel" hidden>
+      <p>
+        Se debe entender que lo que se escribe es propio, aunque se tenga la necesidad de corregir los errores consultados con la IA.
+        Esto hace que te des cuenta de que no solo los poderes quieren que no pienses: los sistemas de hoy, si no estás capacitado, te entretienen.
+        Piensa, luego actúa. Por eso debes mantener tus propios valores.
+      </p>
+    </div>
+  </section>
+  
+  <section role="region" aria-labelledby="titulo-articulos" class="contenedor-articulos">
+    <h2 id="titulo-articulos">Artículo</h2>
+    <ul id="lista-articulos" role="list" aria-label="Artículos disponibles"></ul>
+    <p id="mensaje-proximo" class="proximo-articulo"></p>
+  </section>
+
+  <footer role="contentinfo" aria-label="Información legal y de edición">
+    <h5>Primera edición de Pensamiento Abierto · © 2026 Ernesto I. Lora. Todos los derechos reservados.</h5>
+    <div class="relaciones" aria-label="Información técnica del sitio">
+      <p>Publicado en <strong>GitHub</strong> https://github.com/AWilly0897/Pensamiento-Abierto-Primera-Edicion</p>
+      <p>Se debe pedir por intermedio de request todo lo que se considere que sea de ayuda para el proyecto.</p>
+      <p>Desplegado con <strong>Vercel</strong> https://Pensamiento-Abierto-Primera-Edicion.vercel.app</p>
+      <p>Interacciones gestionadas con <strong>Copilot</strong></p>
+      <p>Arquitectura reservada</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+

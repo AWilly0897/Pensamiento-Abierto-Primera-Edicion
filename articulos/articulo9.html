@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padres que invierten</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+<meta property="og:title" content="Padres que invierten">
+  <meta property="og:description" content="Un proyecto editorial y testimonial que busca abrir el debate sobre memoria, política, economía y sociedad.">
+  <meta property="og:image" content="https://pensamiento-abierto-primera-edicion.vercel.app/img/p4.jpg">
+  <meta property="og:url" content="https://pensamiento-abierto-primera-edicion.vercel.app/articulos/articulo9.html">
+  <meta property="og:type" content="article">
+</head>
+
+<body>
+    <header role="banner" aria-label="Encabezado principal del artículo">
+        <h1>Padres que invierten: En el amor por sus hijos</h1>
+        <p class="articulo" aria-label="Número de artículo">Artículo 9</p>
+    </header>
+
+    <main role="main" aria-label="Contenido principal del artículo">
+        <section aria-labelledby="tarea">
+            <h2 id="tarea">Padres que narran</h2>
+            <p>
+                Luna avanzaba más y más, mientras sus pasos la guiaban hacia lo desconocido. Sabía que las llaves mágicas aún guardaban muchos secretos.
+                Al dar vuelta en un pequeño sendero, vio un destello de luz que venía desde un rincón oscuro del bosque.
+            </p>
+
+            <h2>Era la tercera llave</h2>
+
+            <p>
+                Esta tenía un brillo dorado que deslumbraba, como si estuviera hecha de estrellas. Luna la tomó con cuidado, como si fuera lo más valioso que hubiera tocado en su vida.
+                De repente, un suave crujido se oyó a su alrededor. Miró hacia arriba y vio cómo las ramas de un árbol cercano se movían lentamente. 
+                "Cada llave que encuentras te acerca más a tu destino, Luna," susurró el árbol con una voz cálida, como el viento en primavera. 
+                "Pero recuerda, la verdadera magia está dentro de ti."
+            </p>
+
+            <p>
+                Luna sonrió, comprendiendo que no estaba sola en su aventura. Con una nueva sensación de valentía, siguió su camino, decidida a descubrir todos los secretos que las llaves guardaban.
+            </p>
+        </section>
+
+        <section aria-labelledby="justicia">
+            <h2 id="justicia">Economía, Política y Futuro</h2>
+            <p>¿Qué nos espera si dejamos librada al azar la familia por el trabajo?</p>
+        </section>
+
+        <section aria-labelledby="relato">
+            <h2 id="relato">Relato inicial</h2>
+            <p>
+                Un padre dedica tiempo y amor a su hijo, ayudándolo en la tarea escolar. Ese gesto que parece simple, pero no lo es, es lo que llamamos educación. 
+                Es economía, porque el tiempo invertido es un sacrificio, pero el amor lo transforma en calidad de tiempo. 
+                Es política, porque en esos nobles actos se construye un país.
+            </p>
+        </section>
+
+        <section aria-labelledby="realidad">
+            <h2 id="realidad">La otra cara de la realidad</h2>
+            <p>
+                No todos los niños reciben el mismo trato. El agobio que produce el gobierno, que solo busca obreros para la máquina de picar carne, los conduce hacia una jubilación 
+                precaria, marcada por el desgaste y la dependencia de remedios.  
+                Aquellos que creen que serán reconocidos para disfrutar de su vida adulta en paz descubren que esa realidad está cada vez más lejos de ser cierta.
+            </p>
+        </section>
+
+        <section aria-labelledby="desequilibrio">
+            <h2 id="desequilibrio">El desequilibrio de la balanza</h2>
+            <p>
+                La justicia va de la mano del poder, porque no rehabilita para un bien mayor; al contrario, fomenta la ira y deja a las familias cercenadas. 
+                Quienes se sacrifican por sus hijos buscan una mejor calidad de vida, mientras otros son arrastrados por un sistema que no reconoce el valor del amor ni del sacrificio.
+            </p>
+        </section>
+
+        <blockquote aria-label="Cita destacada">
+            <p>“Un país se construye con educación, sanidad y justicia, no con indiferencia y explotación.”</p>
+            <cite class="firma">— Ernesto I. Lora</cite>
+        </blockquote>
+    </main>
+  
+    <!-- Incluir formulario -->
+    <div id="bloque-formulario"></div>
+
+    <!-- Comentarios publicados -->
+    <section id="comentarios-publicados" class="comentarios-publicados">
+        <h2>Comentarios publicados</h2>
+        <ul id="lista-publicados"></ul>
+    </section>
+    <!-- Navegación entre artículos -->
+    <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+        <ul>
+            <li>
+                <a href="articulo8.html" aria-label="Ir al artículo anterior: artículo 7">
+                    ⟵ Artículo anterior
+                </a>
+            </li>
+            <li>
+                <a href="articulo10.html" aria-label="Ir al artículo siguiente: artículo 9">
+                    Artículo siguiente ⟶
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+<script src="../js/comentarios.js"></script>
+<script src="../script.js"></script>
+<script>
+  // Cargar el formulario y el footer como componentes
+  fetch("../componentes/formulario-comentario.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-formulario").innerHTML = html;
+    });
+
+  fetch("../componentes/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("bloque-footer").innerHTML = html;
+    });
+</script>
+
+</body>
+
+</html>

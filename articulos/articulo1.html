@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Privacidad se encuentra perdida</title>
+
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+  <link rel="stylesheet" href="../css/comentarios-publicados.css">
+  <link rel="icon" href="../Favicon.ico" type="image/x-icon">
+
+  <!-- Metadatos Open Graph -->
+  <meta property="og:title" content="La Privacidad se encuentra perdida">
+  <meta property="og:description" content="El Aguila avista la ilusión, Un control perdido, Las condiciones que la tecgnologia te impone.">
+  <meta property="og:image" content="https://pensamiento-abierto-primera-edicion.vercel.app/img/calva2.jpg">
+  <meta property="og:url" content="https://pensamiento-abierto-primera-edicion.vercel.app/articulos/articulo1.html">
+  <meta property="og:type" content="article">
+</head>
+
+<body>
+
+  <header role="banner" aria-label="Encabezado principal del artículo">
+    <h1>La Privacidad dejo de ser privada</h1>
+    <p class="articulo" aria-label="Número de artículo">Artículo 1</p>
+  </header>
+
+  <main role="main" aria-label="Contenido principal del artículo">
+
+    <article>
+      
+    <section aria-labelledby="intro">
+      <h2 id="intro">Introducción</h2>
+      <p>Nos dijeron que podíamos controlar nuestros datos. Que podíamos decidir qué compartir, con quién y cuándo. Pero eso fue solo una ilusión bien diseñada. 
+        Porque en el mundo digital, la privacidad no se protege: <strong>se simula</strong>.</p>
+    </section>
+
+    <section aria-labelledby="interfaz">
+      <h2 id="interfaz">La interfaz del control</h2>
+      <p>Cada vez que negamos un permiso, el sistema lo vuelve a configurar. Cada vez que borramos una caché, los accesos se restauran. Cada vez que desactivamos una función, 
+        otra se activa en su lugar. Y así, <em>el control que creemos tener es solo una interfaz decorativa</em>.</p>
+    </section>
+
+    <section aria-labelledby="sistemas">
+      <h2 id="sistemas">Sistemas cruzados</h2>
+      <p>Las aplicaciones invaden todo lo que pueden mientras el sistema se los permita o que la hayas eliminado, hay que saber para que sirve cada aplicacion y 
+        con quien se relaciona pero por sobre todas las cosas saber lo que realmente realiza y de quien es la propiedad.</p> 
+
+    <section aria-labelledby="perfil">
+      <h2 id="perfil">El perfil invisible</h2>
+      <p>La privacidad se ha convertido en un menú de opciones que no elegimos. Nos agregan a grupos sin permiso. Nos etiquetan sin aviso. Nos rastrean sin consentimiento. 
+        Y todo queda registrado, no solo en archivos, sino en perfiles invisibles. que definen quién sos, qué hacés y qué pensás.</p>
+    </section>
+
+    <section aria-labelledby="etica">
+      <h2 id="etica">Una cuestión ética</h2>
+      <p>Pero esto no es solo técnico. Es <strong>político, ético y humano</strong>. Porque cuando el sistema decide por vos,te convierte en objeto, no en sujeto. 
+        Y cuando el control es una simulación.</p>
+    </section>
+
+    <section aria-labelledby="propuesta">
+      <h2 id="propuesta">Propuesta</h2>
+      <p>Por eso este artículo es una propuesta: <strong>no admitir permisos si no sabes lo que hacen, a borrar, a desconectar, a no sincronizar</strong>. 
+        ser muy objetivo con las actualizaciones y ver que actualizan (eatas te llevan informacion almacenada y libra espacio para que trabaje de forma mas precisa 
+        a la hora de recolectar los datos), el tema es saber ver que se actualiza, o sera lo que libera</p>
+    </section>
+
+    </article>
+    
+    <blockquote aria-label="Cita destacada">
+      <p>“La libertad no se programa. Ni se profana.”</p>
+      <cite class="firma">— Ernesto I. Lora</cite>
+    </blockquote>
+    
+  </main>
+
+  <!-- Incluir formulario -->
+  <div id="bloque-formulario"></div>
+
+  <!-- Comentarios publicados -->
+  <section id="comentarios-publicados" class="comentarios-publicados">
+    <h2>Comentarios publicados</h2>
+    <ul id="lista-publicados"></ul>
+  </section>
+
+  <nav class="navegacion-articulos" role="navigation" aria-label="Navegación entre artículos">
+    <ul>
+      <li>
+        <a href="../index.html" aria-label="Ir al inicio">⟵ Volver al inicio</a>
+      </li>
+      <li>
+        <a href="articulo2.html" aria-label="Ir al artículo siguiente">Artículo siguiente ⟶</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Footer -->
+  <div id="bloque-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../js/comentarios.js"></script>
+  <script src="../script.js"></script>
+  <script>
+    // Cargar el formulario y el footer como componentes
+    fetch("../componentes/formulario-comentario.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-formulario").innerHTML = html;
+      });
+
+    fetch("../componentes/footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-footer").innerHTML = html;
+      });
+  </script>
+</body>
+</html>
+
