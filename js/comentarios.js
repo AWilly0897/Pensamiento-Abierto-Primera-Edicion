@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mostrarComentariosPublicados();
 
   // Delegar evento cuando el formulario se cargue dinámicamente
-  document.addEventListener("submit", function (e) {
+  document.addEventListener("submit", async function (e) {
     if (e.target && e.target.id === "formulario-comentario") {
       e.preventDefault();
 
@@ -18,7 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
       comentarios.push(nuevoComentario);
       localStorage.setItem("comentariosPublicados", JSON.stringify(comentarios));
 
-      // Mostrar inmediatamente
+      // 🔹 Enviar al backend para crear Issue en GitHub
+      try {
+        const response = await fetch("/api/nuevo-comentario", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ nombre, comentario })
+        });
+
+        if (!response.ok) {
+          throw new Error("Error al enviar comentario al backend");
+        }
+
+        const data = await response.json();
+        console.log("Issue creado en GitHub:", data.html_url);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+
+      // Mostrar inmediatamente en la página
       mostrarComentariosPublicados();
 
       e.target.reset();
@@ -46,3 +64,4 @@ function mostrarComentariosPublicados() {
     lista.appendChild(item);
   });
 }
+
