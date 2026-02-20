@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     );
 
     if (!response.ok) {
-      throw new Error(`GitHub API error: ${response.status}`);
+      throw new Error(`Error de API de GitHub: ${response.status}`);
     }
 
     const issue = await response.json();
