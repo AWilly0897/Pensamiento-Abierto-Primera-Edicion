@@ -38,9 +38,10 @@ document.querySelectorAll('nav a').forEach(link => {
     // Agregá más artículos según tu cronograma editorial
   ];
 
-  const ahora = new Date();
+  document.addEventListener("DOMContentLoaded", () => {
   const contenedor = document.getElementById("lista-articulos");
   const mensaje = document.getElementById("mensaje-proximo");
+  const ahora = new Date();
 
   let siguiente = null;
 
@@ -61,3 +62,5 @@ document.querySelectorAll('nav a').forEach(link => {
     const fecha = new Date(siguiente.fecha);
     mensaje.textContent = `${siguiente.titulo} estará disponible el ${fecha.toLocaleDateString('es-AR')} a las ${fecha.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' })}`;
   }
+});
+  
