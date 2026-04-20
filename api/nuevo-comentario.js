@@ -25,7 +25,8 @@ export default async function handler(req, res) {
         },
         body: JSON.stringify({
           title: comentario, // el texto principal como título del Issue
-          body: `Comentario enviado por: ${nombre}`
+          body: `Comentario enviado por: ${nombre}\nArtículo: ${articulo}`,
+          labels: [articulo] // 🔹 etiqueta con el título del artículo
         })
       }
     );
