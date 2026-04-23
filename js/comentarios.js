@@ -59,12 +59,16 @@ async function traerComentariosDeGitHub() {
 
     const issues = await response.json();
 
-    return issues.map(issue => ({
-      fecha: issue.created_at,
-      nombre: issue.body?.replace("Comentario enviado por: ", "") || "Anónimo",
-      articulo: document.title,
-      comentario: issue.title
-    }));
+    return issues.map(issue => {
+      const articuloLabel = issue.labels?.[0]?.name || "articulo-sin-titulo";
+      const nombreExtraido = issue.body?.match(/Comentario enviado por: (.+)/);
+      return {
+        fecha: issue.created_at,
+        nombre: nombreExtraido ? nombreExtraido[1] : "Anónimo",
+        articulo: articuloLabel,
+        comentario: issue.title
+      };
+    });
   } catch (error) {
     console.error("Error al traer comentarios de GitHub:", error);
     return [];
