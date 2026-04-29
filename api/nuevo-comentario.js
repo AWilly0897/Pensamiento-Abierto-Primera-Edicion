@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Método no permitido" });
   }
 
-  const { nombre, comentario } = req.body;
+  const { nombre, comentario, articulo } = req.body;
 
   if (!comentario) {
     return res.status(400).json({ error: "Comentario vacío" });

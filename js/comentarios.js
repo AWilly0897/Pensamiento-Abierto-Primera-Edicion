@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch("/api/nuevo-comentario", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ nombre, comentario })
+          body: JSON.stringify({ nombre, comentario, articulo })
         });
 
         if (!response.ok) {
