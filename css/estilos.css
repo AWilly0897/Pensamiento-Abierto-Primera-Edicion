@@ -132,7 +132,24 @@ footer .relaciones {
   margin-top: 10px;
   text-align: center;
 }
+.contenedor-articulos ul {
+  list-style-type: none; /* elimina los puntos */
+  padding-left: 0;       /* quita el espacio del margen */
+}
 
+.contenedor-articulos li {
+  margin-bottom: 0.5rem; /* separa los enlaces */
+}
+
+.contenedor-articulos a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contenedor-articulos a:hover {
+  text-decoration: underline;
+}
 /* Responsividad */
 @media (max-width: 768px) {
   body {
