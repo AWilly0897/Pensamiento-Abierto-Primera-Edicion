@@ -119,9 +119,10 @@ section {
   margin-bottom: 1rem;
 }
 footer {
+  background-color: #003366;
   margin-top: 60px;
-  font-size: 0.9em;
-  color: red;
+  font-size: 1em;
+  color: rgb(136, 255, 0);
   text-align: center;
   border-top: 1px solid black;
   padding-top: 10px;
@@ -138,7 +139,7 @@ footer p {
 }
 
 footer a {
-  color: yellow;
+  color: rgb(190, 190, 33);
  }
 
 footer a:hover {
