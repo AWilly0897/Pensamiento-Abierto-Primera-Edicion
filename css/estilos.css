@@ -118,19 +118,31 @@ section {
   border-radius: 6px;
   margin-bottom: 1rem;
 }
-footer[role="contentinfo"] {
+footer {
   margin-top: 60px;
   font-size: 0.9em;
-  color: #888;
+  color: red;
   text-align: center;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid black;
   padding-top: 10px;
+  font-family: Arial, sans-serif;
 }
-footer .relaciones {
-  font-size: 0.9em;
-  color: #555;
-  margin-top: 10px;
-  text-align: center;
+footer h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+ }
+
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: yellow;
+ }
+
+footer a:hover {
+  text-decoration: underline;
 }
 .contenedor-articulos ul {
   list-style-type: none; /* elimina los puntos */
