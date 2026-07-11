@@ -94,26 +94,28 @@
       </li>
     </ul>
   </nav>
-  <!-- Footer -->
-  <div id="bloque-footer"></div>
-
+  <!-- Footer unificado -->
+  <footer class="footer-principal" role="contentinfo" aria-label="Información técnica y de edición">
+    <h4>Información técnica y su desarrollo</h4>
+    <p>Publicado en <strong>GitHub</strong></p>
+    <p>Interacciones gestionadas con <strong>Copilot</strong></p>
+    <p>Primera edición de Pensamiento Abierto</p>
+    <p>© 2026 Ernesto Ireneo Lora. Todos los derechos reservados.</p>
+    <a href="https://github.com/AWilly0897/Pensamiento-Abierto-Primera-Edicion" target="_blank">
+      Repositorio del proyecto
+    </a>
+  </footer>
+  
   <!-- Scripts -->
-<script src="../js/comentarios.js"></script>
-<script>
-  // Cargar el formulario y el footer como componentes
-  fetch("../componentes/formulario-comentario.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("bloque-formulario").innerHTML = html;
-    });
-
-  fetch("../componentes/footer.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("bloque-footer").innerHTML = html;
-    });
-</script>
-
-</body>
-
-</html>
+  <script src="../js/comentarios.js"></script>
+  <script>
+    // Cargar el formulario y el footer como componentes
+    fetch("../componentes/formulario-comentario.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("bloque-formulario").innerHTML = html;
+      });
+  </script>
+  </body>
+  
+  </html>

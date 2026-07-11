@@ -15,6 +15,21 @@ body {
   padding: 2rem;
 }
 
+/* Encabezado con icono */
+.encabezado-con-icono {
+  display: flex;
+  flex-direction: column; /* apila imagen y texto */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icono-header {
+  width: 64px;
+  height: 64px;
+  margin-top: 0;
+}
+
 /* Encabezado */
 header {
   background-color: #003366;
@@ -22,6 +37,11 @@ header {
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff; /* blanco para que contraste */
 }
 
 .subtitulo {
@@ -65,11 +85,6 @@ nav a:hover {
 }
 
 /* Títulos */
-h1 {
-  font-size: 2rem;
-  color: #003366;
-}
-
 h2 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -118,33 +133,40 @@ section {
   border-radius: 6px;
   margin-bottom: 1rem;
 }
-footer {
+
+/* Footer */
+.footer-principal {
   background-color: #003366;
-  margin-top: 60px;
-  font-size: 1em;
-  color: rgb(136, 255, 0);
+  color: #fff;
   text-align: center;
-  border-top: 1px solid black;
-  padding-top: 10px;
-  font-family: Arial, sans-serif;
-}
-footer h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
- }
-
-footer p {
-  margin: 5px 0;
-  font-size: 14px;
+  padding: 20px;
+  font-family: 'Georgia', serif; 
 }
 
-footer a {
-  color: rgb(190, 190, 33);
- }
+.footer-principal a {
+  color: #4da3ff;           /* enlace destacado */
+  text-decoration: none;
+}
 
-footer a:hover {
+.footer-principal a:hover {
   text-decoration: underline;
 }
+
+/* Contenedor de artículos */
+.contenedor-articulos {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #eef2f5;
+  border-left: 4px solid #003366;
+  border-radius: 6px;
+}
+
+.contenedor-articulos h2 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
 .contenedor-articulos ul {
   list-style-type: none; /* elimina los puntos */
   padding-left: 0;       /* quita el espacio del margen */
@@ -163,6 +185,13 @@ footer a:hover {
 .contenedor-articulos a:hover {
   text-decoration: underline;
 }
+
+.proximo-articulo {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
   body {
@@ -170,30 +199,11 @@ footer a:hover {
     font-size: 1rem;
   }
 
-  h1 {
+  header h1 {
     font-size: 1.5rem;
   }
 
   h2 {
     font-size: 1.2rem;
   }
-}
-.contenedor-articulos {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #eef2f5;
-  border-left: 4px solid #003366;
-  border-radius: 6px;
-}
-
-.contenedor-articulos h2 {
-  font-size: 1.4rem;
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-.proximo-articulo {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 1rem;
 }
