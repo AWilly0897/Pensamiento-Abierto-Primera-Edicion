@@ -107,38 +107,20 @@ blockquote[aria-label] {
 
 
 /* Pie de página */
-footer[role="contentinfo"] {
-  margin-top: 60px;
-  font-size: 0.9em;
-  color: #888;
+.footer-principal {
+  background-color: #003366;
+  color: #fff;
   text-align: center;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  border-radius: 8px; 
 }
 
-/* Accesibilidad: foco visible para navegación por teclado */
-:focus {
-  outline: 2px dashed #005f73;
-  outline-offset: 4px;
+.footer-principal a {
+  color: #4da3ff;           /* enlace destacado */
+  text-decoration: none;
 }
 
-/* Mejora de contraste para enlaces */
-a {
-  color: #005f73;
+.footer-principal a:hover {
   text-decoration: underline;
-}
-
-a:focus,
-a:hover {
-  background-color: #dff0f2;
-}
-
-/* Compatibilidad con lectores de pantalla */
-[aria-label] {
-  position: relative;
-}
-
-/* Evitar que aria-hidden afecte visualmente */
-[aria-hidden="true"] {
-  visibility: hidden;
 }
